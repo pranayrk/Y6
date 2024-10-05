@@ -324,3 +324,90 @@
 
 					<p>Make Scratch have different answers based on your responses.</p>
 				</section>
+				<section>
+					<h3>Task 11: Brick Breaker</h3>
+					<ul>
+						<li>Make a new Scratch project</li>
+						<li>right-click the <b>Sprite1</b> cat in the Sprite List and select delete from the menu.</li>
+						<li>Then click the <b>Choose a Sprite</b> button and select the <em>green Paddle</em> sprite.</li>
+						<li>Add this code to the Paddle sprite</li>
+					</ul>
+					<img src="images/paddle_1.jpeg"></img>
+				</section>
+				<section>
+					<h3>Task 11: Brick Breaker</h3>
+					<p>The paddle code makes the paddle follow the mouse but only in the horizontal direction</p>
+					<p><img height="350" src="images/paddle_2.jpeg"></img></p>
+				</section>
+				<section>
+					<h3>Task 11: Brick Breaker</h3>
+					<p>The rotation style prevents it from rotating so it stays straight</p>
+					<p><img height="500" src="images/rotation_styles.jpeg"></img></p>
+				</section>
+				<section>
+					<h3>Task 11: Brick Breaker</h3>
+					<ul>
+						<li>Click the <b>Choose a Sprite</b> button in the lower right and select the <em>Tennis Ball</em> sprite.</li>
+						<li>Add the following code <em>to the tennis ball sprite</em></li>
+						<li>Run your program to test how it works so far</li>
+					</ul>
+					<img src="images/ball_1.jpeg"></img>
+				</section>
+				<section>
+					<h3>Task 11: Brick Breaker</h3>
+					<ul>
+						<li>Keep adding to the Tennis Ball code so it will bounce off the Paddle sprite.</li> 
+						<li>To do so, you’ll need to create a new <b>broadcast message</b> called bounce.</li>
+					</ul>
+					<img src="images/ball_2.jpeg"></img>
+				</section>
+				<section>
+					<h3>Task 11: Brick Breaker</h3>
+					<p>The <b>point in direction(180 - direction)</b> code just calculates the direction in which the ball will bounce based on the ball’s current direction.</p>
+					<img src="images/point_180.jpeg"></img>
+				</section>
+				<section>
+					<h3>Task 11: Brick Breaker</h3>
+					<ul>
+						<li>Click the <b>Choose a Sprite</b> button in the lower right and select the <em>Button 2</em> sprite</li>
+						<li>Rename this sprite Brick in the Sprite Pane.</li>
+						<li>Create a new variable by selecting the orange <b>Variables</b> category and clicking the <b>Make a Variable</b> button.</li>
+
+						<li>You’ll have to name this variable <b>Score</b> and set it to <b>For all</b> sprites.</li>
+						<li>Add the following code on the next page to the <b>Brick</b> sprite.</li>
+					</ul>					 
+				</section>
+				<section>
+					<h3>Task 11: Brick Breaker</h3>
+					<img src="images/brick_1.jpeg"></img>
+					<p>At the beginning of the game, the <b>Score</b> variable is set to 0 to remove any points from a previous game. </p>
+					<p>The original sprite hides itself with the hide block, and moves to the top-left corner of the Stage</p>
+					<p>We will use only clones of this original block which show themselves with the show block.</p>
+				</section>
+				<section>
+					<h3>Task 11: Brick Breaker</h3>
+					<ul>
+					<li>For the Brick Breaker game, we want many rows of bricks.</li> <li>To make the rows of bricks, we’ll move the original sprite across the top of the screen, creating a trail of clones.</li> <li>Add the code on the next page to the Brick sprite.</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Task 11: Brick Breaker</h3>
+					<img src="images/cloning_bricks.jpeg"></img>
+				</section>
+				<section>
+					<h3>Task 11: Brick Breaker</h3>
+					<img src="images/brick_logic.jpeg"></img>
+					<p>The last Brick in the figure is the original sprite, not a clone, so we should <b>hide it</b></p>
+				</section>
+				<section>
+					<h3>Task 11: Brick Breaker</h3>
+					<ul>
+					<li>Update the code for the Brick sprite to match this</li>
+					<li>Test your code so far</li>
+					</ul>
+					<p><img height="400" src="images/brick_code.jpeg"></img></p>
+					<!--
+					<p>When the Tennis Ball sprite hits a Brick sprite, the Brick sprite <em>broadcasts</em> the bounce message</p>
+					<p>This brings the Tennis Ball code into play and the ball’s direction changes</p>
+					-->
+				</section>
