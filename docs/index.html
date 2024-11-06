@@ -36,150 +36,38 @@
 					<h6>Naypyitaw International Science Academy</h6>
 				</section>
 
-<section data-markdown>
-	# Chapter 5
-	## Multimedia
-	#### Our School Survey
-</section>
-<!--
+<section>
+	<h3>Calculating the average</h3>
+	<p>Write a Scratch program to calculate the average of some numbers entered by the user. You do not know how many numbers the user will choose to enter.</p>
+	<ul>
+		<li>Make a new variable called <b>total</b>. This will keep the total of all the numbers the users entered.</li>
 
-	* Introduction to surveys and data collection
-	* discuss surveys and its importance
-	* population and sample size
-	* types of survey: interview vs questionaire
-	* open ended vs closed ended question
-	* data cleaning, encoding
-	* examples of famous surveys and how they were conducted
-	* brainstorm potential survey topics regarding the school (school meals, favourite subjects, extracurricular activities, etc)
-	* voting is a survey
-	* voting and sampling
-	* why they should have weighted y2 less
-	* Designing a survey and format
-	* biased vs unbiased questions
-	* come up with questions for your survey
-	* answer formats
-	* completed draft of a survey ready to be made in google forms
-	* How to conduct a survey
-	* systematically
-	* ensure ethical considerations
-	* privacy
-	* confidentiality
-	* track each class so you can find response rates for each class
-	* conduct the survey with teacher supervision
-	* organize data
-	* in spreadsheet
-	* use filters for analysis
-	* create basic graphs (bar graphs, pie charts) to represent their findings
-	* Draw conclusions based on responses
-	* Present Survey Results
-	* Use presentation software to present the data and conclusions
-	* practice public speaking skill
-	* 
--->
-<section>
-	<h3>What is a survey?</h3>
-	<img src="images/survey_example.png"></img>
-	<p>A <b>survey</b> is a method to gather information from people</p>
-	<p>It consists of a series of questions to gather information on a particular subject</p>
+		<li>Make a new variable called <b>count</b>. This will keep a count of how many numbers the users entered.</li>
+		<li>Make a new variable called <b>average</b>. We will calculate the average and store it in this variable</li>
+	</ul>
+	<p>$$ \text{average} = \frac{\text{total}}{\text{count}}$$</p>
 </section>
 <section>
-	<p>Once a survey has been conducted and information has been gathered, they are then turned into <b>data</b> which can be analysed</p>
-	<img src="images/survey_analysing.png"></img>
-	<p>Digital surveys are faster to launch than speaking with people individually</p>
+	<p>The algorithm for the code is provided below</p>
+	<pre>
+When the program starts:
+	Set the total to 0
+	Set the count to 0
+	loop forever:
+		ask the user to enter the next number
+		if the user does not enter anything or enters 0:
+			set the average to total/count
+			say the average
+			stop the program
+		otherwise:
+			add the answer to the total
+			add 1 to the count
+	</pre>
 </section>
 <section>
-	<ul>
-		<li>Surveys are a reliable, low cost and convenient research method</li>
+	<img height="600" src="images/averages_code.png"></img>
+</section>
 
-		<li>However, drawbacks of surveys include <b>survey fatigue</b> and <b>potential misunderstandings</b></li>
-		<li>Ideally you want to capture the authentic thoughts, feelings and interests of your respondents.</li>
-
-		<li>When a gap opens between the data in your surveys and the real feelings of the respondents its called <b>survey bias</b></li>
-	</ul>
-</section>
-<section>
-	<ul>
-		<li>There are two main types of surveys: <b>interviews</b> and <b>questionnaires</b></li>
-		<li>In an interview, the surveyor goes to the respondent and sits with them to ask the questions</li>
-		<li>A questionnaire, on the other hand, is just handed to the respondent and they can answer at their own pace</li>
-	</ul>
-</section>
-<section>
-	<img height="400" src="images/open_ended_vs_closed_ended.png"></img>
-	<p>It is easier to make data using information from close-ended questions</p>
-	<p>open-ended questions allow more flexibility in response and are useful for exploring new ideas</p>
-</section>
-<section>
-	<img height="400" src="images/activity_enjoy.png"></img>
-	<p>A multiple choice question is an example of a <b>close-ended question</b></p>
-</section>
-<section>
-	<img src="images/activity_bar_chart.png"></img>
-	<p>Close ended questions are easier to analyse</p>
-</section>
-<section>
-	<img height="500" src="images/sampling_town.png"></img>
-
-	<p>Imagine you are asked to collect information about residents in your town</p>
-</section>
-<section>
-	<img height="500" src="images/sampling_town_question.png"></img>
-</section>
-<section>
-	<img height="500" src="images/sampling_town_many.png"></img>
-	<p>It might take too much time to collect information from everyone in the town</p>
-</section>
-<section>
-	<img src="images/sampling_town_representative.png"></img>
-	<p>Instead, we use the concept of <b>sampling</b></p>
-	<p>Sampling is a technique of representing the whole population looking at just a <b>sample</b> or smaller part</p>
-</section>
-<section>
-	<h5>How do you use sampling effectively?</h5>
-	<ul class="fragment">
-		<li>using a big enough sample</li>
-		<li>making the sample representatives random</li>
-		<li>choosing multiple sample groups</li>
-	</ul>
-</section>
-<section>
-	<img src="images/school_chocolate_milk.png"></img>
-	<p>A school is considering giving chocolate milk along with lunch.</p>
-	<p>If the school has a 1000 students, what would be a good sample size for the survey?</p>
-</section>
-<section>
-	<h3>Tips to make good questions for a survey</h3>
-	<ul>
-		<li>Clearly identify the topic you want to conduct the survey on</li>
-		<li>Check for questions that may be misunderstood</li>
-		<li>Choose whether each question should be open-ended or close-ended</li>
-		<li>Avoid leading questions</li>
-	</ul>
-</section>
-<section>
-	<p>This is an example of a bad survey question</p>
-	<img height="500" src="images/bad_survey_question.png"></img>
-</section>
-<section>
-	<h3>Types of questions</h3>
-	<ul>
-		<li>Multiple choice questions</li>
-		<li>Open-ended questions</li>
-		<li>Level of agreement questions</li>
-		<li>Ranked response questions</li>
-	</ul>
-</section>
-<section>
-	<h5>Putting the survey together</h5>
-	<ul>
-		<li>Include the survey title at the top of the page</li>
-		<li>Include a brief introduction to your research aim</li>
-		<li>Include a paragraph that identifies you or your group, with your contact infomration</li>
-		<li>Include a concluding statment at the end thanking respondents for participation</li>
-		<li>Ensure questions are as brief as possible and use plain language</li>
-		<li>Minimize ambiguity in the questions and response options</li>
-	</ul>
-</section>
 
 			</div>
 		</div>

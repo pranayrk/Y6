@@ -1,1 +1,3 @@
-map: chapter_3_reduced.html
+map:
+  # - chapter_3_reduced.html
+  - chapter_3_quiz.html
