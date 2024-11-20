@@ -36,41 +36,327 @@
 					<h6>Naypyitaw International Science Academy</h6>
 				</section>
 
-<section>
-	<h3>Test: Calculating the average</h3>
-	<p>Write a Scratch program to calculate the average of some numbers entered by the user. You do not know how many numbers the user will choose to enter.</p>
-	<!--
-	<ul>
-		<li>Make a new variable called <b>total</b>. This will keep the total of all the numbers the users entered.</li>
-
-		<li>Make a new variable called <b>count</b>. This will keep a count of how many numbers the users entered.</li>
-		<li>Make a new variable called <b>average</b>. We will calculate the average and store it in this variable</li>
-	</ul>
-	<p>$$ \text{average} = \frac{\text{total}}{\text{count}}$$</p>
+<section data-markdown>
+	# Chapter 3
+	## Computational Thinking
+	#### Algorithms and Programs
 </section>
 <section>
+	<h3>Task 11: Brick Breaker</h3>
+	<ul>
+		<li>Make a new Scratch project</li>
+		<li>right-click the <b>Sprite1</b> cat in the Sprite List and select delete from the menu.</li>
+		<li>Then click the <b>Choose a Sprite</b> button and select the <em>green Paddle</em> sprite.</li>
+		<li>Add this code to the Paddle sprite</li>
+	</ul>
+	<img src="images/paddle_1.jpeg"></img>
+</section>
+<section>
+	<h3>Task 11: Brick Breaker</h3>
+	<p>The paddle code makes the paddle follow the mouse but only in the horizontal direction</p>
+	<p><img height="350" src="images/paddle_2.jpeg"></img></p>
+</section>
+<section>
+	<h3>Task 11: Brick Breaker</h3>
+	<p>The rotation style prevents it from rotating so it stays straight</p>
+	<p><img height="500" src="images/rotation_styles.jpeg"></img></p>
+</section>
+<section>
+	<h3>Task 11: Brick Breaker</h3>
+	<ul>
+		<li>Click the <b>Choose a Sprite</b> button in the lower right and select the <em>Tennis Ball</em> sprite.</li>
+		<li>Add the following code <em>to the tennis ball sprite</em></li>
+		<li>Run your program to test how it works so far</li>
+	</ul>
+	<img src="images/ball_1.jpeg"></img>
+</section>
+<section>
+	<h3>Task 11: Brick Breaker</h3>
+	<ul>
+		<li>Keep adding to the Tennis Ball code so it will bounce off the Paddle sprite.</li> 
+		<li>To do so, you’ll need to create a new <b>broadcast message</b> called bounce.</li>
+	</ul>
+	<img src="images/ball_2.jpeg"></img>
+</section>
+<section>
+	<h3>Task 11: Brick Breaker</h3>
+	<p>The <b>point in direction(180 - direction)</b> code just calculates the direction in which the ball will bounce based on the ball’s current direction.</p>
+	<img src="images/point_180.jpeg"></img>
+</section>
+<section>
+	<h3>Task 11: Brick Breaker</h3>
+	<ul>
+		<li>Click the <b>Choose a Sprite</b> button in the lower right and select the <em>Button 2</em> sprite</li>
+		<li>Rename this sprite Brick in the Sprite Pane.</li>
+		<li>Create a new variable by selecting the orange <b>Variables</b> category and clicking the <b>Make a Variable</b> button.</li>
+
+		<li>You’ll have to name this variable <b>Score</b> and set it to <b>For all</b> sprites.</li>
+		<li>Add the following code on the next page to the <b>Brick</b> sprite.</li>
+	</ul>					 
+</section>
+<section>
+	<h3>Task 11: Brick Breaker</h3>
+	<img src="images/brick_1.jpeg"></img>
+	<p>At the beginning of the game, the <b>Score</b> variable is set to 0 to remove any points from a previous game. </p>
+	<p>The original sprite hides itself with the hide block, and moves to the top-left corner of the Stage</p>
+	<p>We will use only clones of this original block which show themselves with the show block.</p>
+</section>
+<section>
+	<h3>Task 11: Brick Breaker</h3>
+	<ul>
+		<li>For the Brick Breaker game, we want many rows of bricks.</li> <li>To make the rows of bricks, we’ll move the original sprite across the top of the screen, creating a trail of clones.</li> <li>Add the code on the next page to the Brick sprite.</li>
+	</ul>
+</section>
+<section>
+	<h3>Task 11: Brick Breaker</h3>
+	<img src="images/cloning_bricks.jpeg"></img>
+</section>
+<section>
+	<h3>Task 11: Brick Breaker</h3>
+	<img src="images/brick_logic.jpeg"></img>
+	<p>The last Brick in the figure is the original sprite, not a clone, so we should <b>hide it</b></p>
+</section>
+<section>
+	<h3>Task 11: Brick Breaker</h3>
+	<ul>
+		<li>Update the code for the Brick sprite to match this</li>
+		<li>Test your code so far</li>
+	</ul>
+	<p><img height="400" src="images/brick_code.jpeg"></img></p>
+	<!--
+		<p>When the Tennis Ball sprite hits a Brick sprite, the Brick sprite <em>broadcasts</em> the bounce message</p>
+		<p>This brings the Tennis Ball code into play and the ball’s direction changes</p>
 	-->
-	<p>The algorithm for the code is provided below</p>
+</section>
+<section data-markdown>
+	### Task 12: Adding Numbers
+
+	##### Requires Textbook
+
+	* Read **Page 38** and **Page 39**
+	* Make the Scratch program detailed on **Page 39**.
+	* Read **Page 40** and **Page 41**
+	* Extend the program to match the Scratch Program on **Page 41**
+	* This program will allow you to add 10 numbers together
+</section>
+<section data-markdown>
+	### Task 13: Taking the average of 10 numbers
+
+	##### Requires Textbook
+
+	* Complete the program by referring to **Page 44** and **Page 45**
+	* This program will let you take the average of 10 numbers
+</section>
+<section>
+	<h3>Task 14: Catch Game</h3>
+	<ul>
+		<li>This is a game where we want objects to fall from the top of the screen and we catch them at the bottom.</li>
+		<li>For the object that falls from the sky, make a new sprite and choose the <b>Apple</b></li>
+		<li>For the catcher, make a new sprite and choose the <b>Bowl</b></li>
+		<li>Add a backdrop to your game</li>
+	</ul>
+</section>
+<section>
+	<h3>Task 14: Catch Game</h3>
+	<ul>
+	<li>Translate the algorithm below to Scratch blocks and add it to the bowl's code.</li>
+	<li>This will let the bowl move side to side</li>
+	</ul>
+
 	<pre>
-When the program starts:
-	Set the total to 0
-	Set the count to 0
+when the program starts:
+	set the position of the bowl to the bottom of the screen
 	loop forever:
-		ask the user to enter the next number
-		if the user does not enter anything or enters 0:
-			set the average to total/count
-			say the average
-			stop the program
-		otherwise:
-			add the answer to the total
-			add 1 to the count
+		if the right arrow key is pressed:
+			change x by 10
+		if the left arrow key is pressed:
+			change x by -10
+	</pre>
+	
+</section>
+<section>
+	<h3>Task 14: Catch Game</h3>
+	<ul>
+		<li>Define a new module (using <b>My Blocks</b>) and add the following functionality. This module will bring the apple to the top of the screen at a random position</li>
+		<li>Translate the following algorithm for the new module into Scratch blocks and add it to the Apple's code</li>
+	</ul>
+	<pre>
+define bringToTop:
+	go to random position
+	set y to 180
 	</pre>
 </section>
-<!--
 <section>
-	<img height="600" src="images/averages_code.png"></img>
+	<h3>Task 14: Catch Game</h3>
+	<ul>
+		<li>Translate the following algorithm into Scratch blocks and add it to the Apple's code.</li>
+		<li>You should now have an apple that can fall and goes back to the top of the screen when it reaches the bottom</li>
+	</ul>
+	<pre>
+when the program starts:
+	run bringToTop
+	loop forever:
+		change y by -10
+		if y < -170:
+			run bringToTop
+	</pre>
+
+</section>
+<section>
+	<h3>Task 14: Catch Game</h3>
+	<ul>
+		<li>Now to make it so we can catch the apple</li>
+		<li>Add a new variable and call it <b>Score</b></li>
+		<li>Translate the algorithm below into Scratch code and add it to the Apple's code</li>
+	</ul>
+	<pre>
+if the apple is touching the bowl:
+	run bringToTop
+	increase score by 1
+	</pre>
+	<p>You should now have a completed catching game</p>
+</section>
+<!--
+	``` 
+	```
+
+	Choose any sprite to fall down.
+	We want the object to start at a random place at the top
+	Define a module to do this
+
+	```
+		```
+
+	and to make the apple fall down, and go back up when it reaches the bottom,
+
+	```
+		define gravity:
+			loop forever:
+				change y by -10
+				if y < -170:
+	 				run bringToTop
+	```
+
+
+	```
+	when program starts:
+		run bringToTop
+	 	run gravity
+	```
+
+	
+	 Define a score variable. Make it so that score is set to 0 when the program starts
+	 Into the apple code, add the code
+	 ```
+	 ```
+	 
+
 </section>
 -->
+<section data-markdown>
+	### Task 15: Jumping Game
+	
+	* Open a new Scratch project
+	* Change the sprite to **Chick** 
+	* Add another sprite **Egg** and change its size to 80%
+	* Change the backdrop to **Blue Sky**
+</section>
+<section>
+	<h3>Task 15: Jumping Game</h3>
+	<ul>
+		<li>Make a new variable and call it <b>y velocity</b></p>
+		<li>To the Chick's code, translate and add the following algorithm</li>
+	</ul>
+	<pre>
+when the program starts:
+	set y velocity to 0
+	loop forever:
+		if y position is less than -121
+			set y velocity to 0
+			set y to -122
+		else:
+			change y by y velocity
+			change y velocity by -2
+
+
+when the spacebar is pressed:
+	loop 10 times:
+		change y by 10
+	
+	</pre>
+</section>
+<section>
+	<h3>Task 15: Jumping Game</h3>
+	<ul>
+		<li>Make a new variable and call it <b>y velocity</b></p></li>
+		<li>Make another new variable and call it <b>score</b></p></li>
+		<li>To the Egg's code, translate and add the following algorithm</li>
+	</ul>
+
+	<pre>
+when the program starts:
+	loop forever:
+		go to x=250, y=-137
+		glide 1 second to x=-230, y=-137
+		increase score by 1
+
+when the egg touches the chick
+	stop all
+	</pre>
+</section>
+<section>
+	<h3>Task 16: Particle Effects</h3>
+	<ul>
+		<li>Create a new Scratch project</li>
+		<li>Download this <a href="https://thepixelgang.co.uk/free/scratch-games-and-sprites/lesson-template-games/184-generators/Generators%20simple%20v1.sb3">file</a></li>
+		<li>Click <b>File --> Load</b> to open the file you downloaded</li>
+	</ul>
+	<img src="images/generators_sprites.png"></img>
+	<p>You should have these sprites loaded</p>
+</section>
+<section>
+	<h3>Task 16: Particle Effects</h3>
+	<p>Select the <b>Stage</b> and add this code</p>
+	<img height="500" src="images/generator_code_1.png"></img>
+</section>
+<section>
+	<h3>Task 16: Particle Effects</h3>
+	<p>Add this code to the <b>Generator 1</b> sprite</p>
+	<img height="500" src="images/generator_code_2.png"></img>
+	<p>Press the <b>B key</b> on your keyboard to test your code.</p>
+</section>
+<section>
+	<h3>Task 16: Particle Effects</h3>
+	<p>Select the <b>Generator 2</b></p>
+	<p>Add it's code to create a different effect.</p>
+
+	<img height="500" src="images/generator_code_3.png"></img>
+</section>
+<section>
+	<h3>Task 16: Particle Effects</h3>
+	<p>Select the <b>Generator 3</b> sprite.</p>
+
+	<p>Add it's code to create a bubble effect.</p>
+
+	<p>This code is more complex and uses the <b>ghost effect</b> to make the clones slowly appear ..</p>
+	<img height="400" src="images/generator_code_4.png"></img>
+</section>
+<section>
+	<h3>Task 16: Particle Effects</h3>
+	<p>The next generator is rain, so we need a cloud from which it will fall.</p>
+	<p>Select the <b>Cloud</b> sprite.</p>
+	<p>Add its code</p>
+	<img src="images/generator_code_5.png"></img>
+</section>
+<section>
+	<h3>Task 16: Particle Effects</h3>
+	<p>Select the <b>Rain</b> sprite.</p>
+	<p>Add it's code.</p>
+
+	<p>Notice how the sprite is cloned, then each clone is moved to a random x-position before falling (moving down)</p>
+	<img height="300" src="images/generator_code_6.png"></img>
+	<p>Press the B key on your keyboard to test your code.</p>
+</section>
 
 			</div>
 		</div>
