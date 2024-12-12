@@ -3,6 +3,7 @@
 	## Computational Thinking
 	#### Algorithms and Programs
 </section>
+<!--
 <section>
 	<h3>Task 11: Brick Breaker</h3>
 	<ul>
@@ -85,10 +86,6 @@
 		<li>Test your code so far</li>
 	</ul>
 	<p><img height="400" src="images/brick_code.jpeg"></img></p>
-	<!--
-		<p>When the Tennis Ball sprite hits a Brick sprite, the Brick sprite <em>broadcasts</em> the bounce message</p>
-		<p>This brings the Tennis Ball code into play and the ball’s direction changes</p>
-	-->
 </section>
 <section data-markdown>
 	### Task 12: Adding Numbers
@@ -178,43 +175,6 @@ if the apple is touching the bowl:
 	</pre>
 	<p>You should now have a completed catching game</p>
 </section>
-<!--
-	``` 
-	```
-
-	Choose any sprite to fall down.
-	We want the object to start at a random place at the top
-	Define a module to do this
-
-	```
-		```
-
-	and to make the apple fall down, and go back up when it reaches the bottom,
-
-	```
-		define gravity:
-			loop forever:
-				change y by -10
-				if y < -170:
-	 				run bringToTop
-	```
-
-
-	```
-	when program starts:
-		run bringToTop
-	 	run gravity
-	```
-
-	
-	 Define a score variable. Make it so that score is set to 0 when the program starts
-	 Into the apple code, add the code
-	 ```
-	 ```
-	 
-
-</section>
--->
 <section data-markdown>
 	### Task 15: Jumping Game
 	
@@ -266,6 +226,7 @@ when the egg touches the chick
 	stop all
 	</pre>
 </section>
+-->
 <section>
 	<h3>Task 16: Particle Effects</h3>
 	<ul>
@@ -319,3 +280,121 @@ when the egg touches the chick
 	<img height="300" src="images/generator_code_6.png"></img>
 	<p>Press the B key on your keyboard to test your code.</p>
 </section>
+<section>
+	<ul>
+		<li>Open a new Scratch Project</li>
+		<li>Start by adding the pen extension.</li>
+		<li>Click on the blue button at the bottom left of the screen and then select the pen extension.</li> 
+		<li>Once the pen is added, add the following blocks to draw a single side</li>
+	</ul>
+</section>
+<section>
+	<p>Go to <b>My Blocks</b> and add the following<p>
+	<img src="images/snowflake_2.webp"></img>
+</section>
+<section>
+	<p>Add the following code to define the block.</p>
+	<img height="400" src="images/snowflake_3.webp"></img>
+	<p>(Right click the image and click <b>open image in a new tab</b> to see it full size)</p>
+</section>
+<section>
+	<p>Go to <b>My Blocks</b> again and make a block called <b>Create Snowflake</b></p>
+	<img height="400" src="images/snowflake_4.webp"></img>
+	<p>Set the backdrop to <b>light blue</b></p>
+</section>
+<section>
+	<p>Add the code below to draw the snowflake</p>
+	<img height="400" src="images/snowflake_5.webp"></img>
+</section>
+
+<!--
+<section>
+	<h3>Create the Ground Sprite</h3>
+
+
+	<p>Let’s use a simple shape for the ground in the first few scripts, just to explore how the code will work.</p>
+
+	<P>Hover over the Choose a Sprite button and click the Paint button to create a temporary ground sprite while you learn about platforming code. In the Paint Editor, use the Brush or Line tool to draw a shape for the ground. You can make the lines thicker by increasing the number in the line width text box at the top of the Paint Editor. Be sure to draw a gentle slope on the right and a steep slope on the left.</p>
+
+	<p>In the Sprite Pane, rename the sprite Ground. Also, rename the Sprite1 sprite Cat.</p>
+	<img src="images/ground_sprite_1.jpeg"></img>
+
+</section>
+<section>
+	<p>Add the Gravity and Landing Code</p>
+
+	<p>Now that we have a sprite for the ground, we need the cat to fall and land on it.</p>
+
+	<p>Select the Cat sprite. In the orange Variables category, click the Make a Variable button and create a For this sprite only variable named y velocity. Then add the following code to the Cat sprite:</p>
+
+
+	<img src="images/gravity_and_landing.jpeg"></img>
+
+	<p>This code performs two actions in its forever loop: it makes the Cat sprite fall until it touches the Ground sprite 1 and then lifts up the Cat sprite if it is deep in the ground 2.</p>
+
+	<p>With these two code sections, the cat will fall down, hit the ground, and then rise if necessary, eventually settling on top of the Ground sprite.</p>
+
+	<p>But the repeat until block 2 will loop until the Cat sprite is no longer touching the Ground sprite. (If the cat is still in the air and falling, it will not be touching the ground, so the code in the loop is skipped.) Inside this loop, the y velocity value is set to 0 so that the Cat sprite stops falling any farther. The change y by 1 block will lift up the Cat sprite a little. The repeat until not touching Ground block continues lifting the sprite until it is no longer sunk into the Ground sprite. This is how the cat stays on top of the ground, no matter what the shape of the Ground sprite is.</p>
+
+
+</section>
+<section>
+
+	<p>The cat also needs to walk left and right by use of the WASD keys, so add the following script to the Cat sprite:<p>
+
+	<img src="images/cat_wrap.jpeg"></img>
+
+</section>
+<section>
+	<p>Next, add the following script to make the Cat sprite wrap around to the top if it falls to the bottom of the Stage:</p>
+
+	<img src="images/cat_fall_bottom.jpeg"></img>
+
+</section>
+<section>
+
+	<p>The big problem with the code right now is that the Cat sprite is lifted from inside the ground to on top of it very slowly. This code needs to run so fast that the player sees the sprite only on top of the ground, not in it.</p>
+
+	<p>The pink custom blocks can help us do this. Go to the My Blocks category and click the Make a Block button. Name the block handle ground and then check the checkbox next to Run without screen refresh. With this box checked, Scratch will run the code in your custom pink block in Turbo Mode, even if the player didn’t enable Turbo Mode by shift-clicking the green flag. Otherwise, the ground-handling code would be too slow for this game.</p>
+
+
+	<img src="images/handle_ground.jpeg"></img>
+
+	<p>The define handle ground block should now appear in the Code Area. Change the code for the Cat sprite to make it use the handle ground block. The handle ground block goes where the repeat until not touching Ground blocks were, and that loop is moved under define handle ground.</p>
+
+</section>
+<section>
+	<img src="imagesdefine_and_handle_ground.jpeg"></img>
+	<p>This code works exactly as it did before, but now the handle ground block has Run without screen refresh checked, so the loop code runs in Turbo Mode. Lifting the cat now happens instantly, so it looks like the cat never sinks into the ground.</p>
+
+</section>
+<section>
+
+The Ground sprite has hills and slopes that the cat can walk on, and you can change the Ground sprite to pretty much any shape in the Paint Editor. This is a big improvement for the player compared to just walking on the bottom of the Stage, as in the Basketball game. But now the problem is that the Cat sprite can walk up the steep slope on the left as easily as it can walk up the gentle slope on the right. This isn’t very realistic. We want the steep slope to block the cat. To do this, we’ll make a small change to the walking code blocks.
+
+At this point, the sprites are becoming overcrowded with lots of different scripts. So, right-click or long press the Code Area and select Clean up Blocks to reorganize the scripts into neat rows
+
+
+
+Now we need to edit the Cat sprite’s walking code and add some new code, too. Instead of simply changing the x position by a particular value, we’ll use a new custom block. Let’s call it walk and give this new custom block an input called steps. An input is somewhat like a variable, but you can only use it in the custom block’s define block.
+
+Click the Make a Block button in the pink My Blocks category to make the walk block. Be sure to click the Add an input number or text button to make the steps input. When we want to call the new walk block, we’ll have to define that input with a number of steps to take. Make sure you check the Run without screen refresh checkbox.
+
+without_screen_refresh.jpeg
+
+This code also requires you to make a variable for the Cat sprite named ground lift (which should be For this sprite only). We’ll use this new variable to determine whether a slope is too steep for the cat to walk up. This code is a little complicated, but we’ll walk through it step-by-step. For now, make the Cat sprite’s code look like the following:
+
+
+walk_definition.jpeg
+
+We want the cat to walk six units, as we did earlier, so we use -6 and 6 in the walking script when we call walk. In the define walk block, the steps input block is used in the change x by blocks. This makes the code more compact, because we can use the same script for moving the cat to the left (with the walk -6 block) or to the right (with the walk 6 block).
+
+The code in the repeat until loop uses the ground lift variable to determine whether the slope is a walkable slope or a wall that should block the Cat sprite’s progress. The ground lift variable starts at 0 and changes by 1 each time the repeat until loop lifts the Cat sprite’s y position by 1. This loop continues looping until the sprite is no longer touching the ground or ground lift is equal to 8.
+
+If ground lift is less than 8, then the slope isn’t that steep. The sprite can walk up the slope, so the define walk script doesn’t have to do anything else.
+
+But if ground lift = 8, the repeat until loop stops looping. This code means “the sprite has been lifted up by 8, but it’s still touching the Ground sprite, so this must be a steep slope.” In that case, we need to undo the lift and the walking movement. The change y by -8 and change x by -1 * steps blocks undo the Cat sprite’s movement. Multiplying the walk input by -1 gives the opposite number of the input and variable
+
+
+<section>
+-->
