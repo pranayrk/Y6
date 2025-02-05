@@ -64,6 +64,7 @@
 	<img height="400" src="images/format.png"></img>
 </section>
 -->
+<!--
 <section>
 	<h3>Task 1: Calculating</h3>
 	<img height="300" src="images/adding.png"></img>
@@ -130,13 +131,11 @@
 		<li>Repeat the same steps to make rows for <b>Total GDP</b> and <b>Average GDP</b></li>
 	</ul>
 </section>
-<!--
 <section>
 	Using Excel Sort, you can easily sort your data.
 
 You can sort your data in Ascending/Descending order if the column contains numbers or dates, and also sort in A-Z/Z-A order (based on the language used – it works for various languages
 </section>
--->
 <section>
 	<h3>Task 5</h3>
 	<img height="400" src="images/sheet_rollercoaster.webp"></img>
@@ -146,7 +145,7 @@ You can sort your data in Ascending/Descending order if the column contains numb
 	</ul>
 </section>
 <section>
-	<h5>Task 6</h5>
+	<h3>Task 6</h3>
 	<ul>
 		<li>Download the spreadsheet from here: <a href="https://docs.google.com/spreadsheets/d/1MkIq4bAD4yQmH-qTRqhK0zJ8HmwBv8Z6/export?format=xlsx">download</a></li>
 		<li><b>Import</b> the spreadsheet into Google Sheets or Excel</li>
@@ -155,15 +154,16 @@ You can sort your data in Ascending/Descending order if the column contains numb
 
 </section>
 <section>
-	<h5>Task 7</h5>
+	<h3>Task 7</h3>
 	<ul>
 		<li>Download the spreadsheet from here: <a href="https://docs.google.com/spreadsheets/d/1rrJEtBLjsFlrB69KfJULXQOuulK-84xo/export?format=xlsx">download</a></li>
 		<li><b>Import</b> the spreadsheet into Google Sheets or Excel</li>
 		<li>Complete the task in the spreadsheet.</li>
 	</ul>
 </section>
+-->
 <section>
-	<h5>Task 8</h5>
+	<h3>Task 8</h3>
 	<ul>
 		<li>Download the spreadsheet from here: <a href="https://docs.google.com/spreadsheets/d/1ZSsUvKnHWt5VMMC-GA_DnB3NZAXSsU9L/export?format=xlsx">download</a></li>
 		<li>Open the spreadsheet in <em>Excel</em> or <em>Google Sheets</em></li>
@@ -172,7 +172,7 @@ You can sort your data in Ascending/Descending order if the column contains numb
 	</ul>
 </section>
 <section>
-	<h5>Task 8</h5>
+	<h3>Task 8</h3>
 	<ul>
 		<li>Click the dropdown button in the <b>Cost Centre</b> column and click <b>Filter Column</b>.</li>
 		<li>In <b>Filter by Values</b>, make sure only the center <em>ZT0000</em> is selected and click <b>OK</b>.</li>
@@ -184,12 +184,71 @@ You can sort your data in Ascending/Descending order if the column contains numb
 <section>
 	<h3>Task 9</h3>
 	<ul>
-		<li>Download the file here and open it in <em>Google Sheets</em> or <em>Microsoft Excel</em>:<a href="https://docs.google.com/spreadsheets/d/1VQItoVInr9lbtFLBI2orRmn2LT4DXUtb/export?format=xlsx">download</a></li></li>
+		<li>Download the file here and open it in <em>Google Sheets</em> or <em>Microsoft Excel</em>: <a href="https://docs.google.com/spreadsheets/d/1VQItoVInr9lbtFLBI2orRmn2LT4DXUtb/export?format=xlsx">download</a></li></li>
 	<li>Set a <em>data validation</em> on cells <b>D4:D15</b> to restrict users to only typing in <em>a whole number between 0 and 26</em>.</li>
-	<li>In Google Sheets, you can do this by selecting the column, then going to <b>Data --> Data Validation --> Add Rule</b>.</li>
-	<li>Try to type in the following values into <b>column D</b> and check that the validation rules work: <b>11.5, -7, 38, 17</b></li>
+	<li><b>In Google Sheets:</b>
+		<ul>
+			<li>Selecting the cells $D4:D15$, then go to <b>Data --> Data Validation --> Add Rule</b>.</li>
+			<li>Under Criteria, select <b>Is Between</b> and type the values $0$ and $26$ for minimum and maximum.</li>
+		</ul>
+	</li>
+	<li>Type these values into <b>column D</b> to verify that the validation rules work: <b>38</b> and <b>-17</b></li>
 	</ul>
 </section>
+<section>
+	<h3>Task 10</h3>
+	<ul>
+		<li>Download the file here and open it in <em>Google Sheets</em> or <em>Microsoft Excel</em>:<a href="https://docs.google.com/spreadsheets/d/1VQItoVInr9lbtFLBI2orRmn2LT4DXUtb/export?format=xlsx">download</a> (same as previous task)</li> 		
+		<li>Apply a <em>list validation</em> on the <b>Department</b> column. This will make it so you can only enter specific values from a dropdown.</li>
+		<li><b>In Google Sheets:</b>
+			<ul> 
+				<li>select cells $F4:F15$ and go to <b>Data --> Data Validation --> Add Rule</b></li>
+				<li>Under <em>Criteria</em>, select <b>Dropdown (from a range)</b> and type <b>L3:L10</b> as the range.</li>
+			</ul>
+		</li>
+		<li><b>In Microsoft Excel:</b>
+			<ul>
+				<li>Select cells $F4:F15$,  and type <b>Validation</b> in the search bar at the top</li>
+				<li>In the <em>Allow</em> menu, select <b>List</b></li>
+				<li>In the <em>Source</em> box, type <b>L3:L10</b></li>
+			</ul>
+		</li>
+	</ul>
+</section>
+<section>
+	<h3>Task 11</h3>
+	<img src="images/excel_task_3.png"></img>
+	<ul>
+		<li>Type out the above data into a new spreadsheet</li>
+		<li>Find the <em>Average</em> using a formula by add all the marks cells and then dividing by the number of students.</li>
+		<li>To do this you can use the formula <b>=(B2+B3+B4+B5+B6+B7+B8)/7</b></li>
+	</ul>
+</section>
+<section>
+	<h3>Task 11</h3>
+	<img src="images/excel_task_3.png"></img>
+	<ul>
+		<li>The <em>IF function</em> lets you check if a condition is true and set the cell value based on that.</li>
+		<li>In the $C2$ cell, use the <em>IF function</em> to check if the student scored more than 60 with the formula <b>=IF(B2 >=60, "yes", "no")</b></li>
+		<li>Extend the formula to all other cells in the $C$ column</li>
+	</ul>
+</section>
+<section>
+	<h3>Task 11</h3>
+	<img src="images/excel_task_3_filter.png"></img>
+	<ul>
+		<li>Select all the data as shown then go to <b>Data --> Create a Filter</b></li>
+		<li>This will add buttons on the column headings that will allow you to filter out the students who passed.</li>
+		<li>Click the <em>filter button</em> (looks like 3 lines) next to the <b>Passed</b> column heading.</li>
+		<li>Under <em>Filter values</em>, deselect <b>no</b> and select only <b>yes</b> and click <b>OK</b>.</li>
+	</ul>
+</section>
+<section>
+	<h3>Task 12: Learner's Book Page 98</h3>
+	<img src="images/learners_book_98_1.png"></img>
+	<img src="images/learners_book_98_2.png"></img>
+</section>
+
 
 
 			</div>
